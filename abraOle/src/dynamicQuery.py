@@ -11,8 +11,6 @@ import win32com.client
 
 abraOle = win32com.client.Dispatch('AbraOLE.Application')
 abraOle.login('supervisor','')
-firmObject = abraOle.CreateObject("@Firm")
-mStrings = abraOle.CreateStrings()
 
 mDynSQL = abraOle.CreateCustomCommand(cDynSQLFirms) 
 mCond = mDynSQL.ConstraintByID("ID")
